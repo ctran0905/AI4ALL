@@ -20,4 +20,8 @@ def predict_sign(model, image):
     with torch.no_grad():
         outputs = model(input_tensor)
         _, preds = torch.max(outputs, 1)
-    return LABELS[preds.item()]
+        pred_index = preds.item()
+        print(f"Predicted index: {pred_index}, Total labels: {len(LABELS)}")
+        if pred_index >= len(LABELS):
+            return "Unknown sign"
+        return LABELS[pred_index]
