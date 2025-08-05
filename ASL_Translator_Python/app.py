@@ -1,8 +1,7 @@
 import streamlit as st
 from models import load_model
-from utils import preprocess_image, predict_sign
+from utils import predict_sign
 from PIL import Image
-import numpy as np
 
 # Load model
 model = load_model()

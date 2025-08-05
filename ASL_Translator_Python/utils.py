@@ -9,7 +9,7 @@ preprocess = transforms.Compose([
                          [0.229, 0.224, 0.225])
 ])
 
-LABELS = [chr(i) for i in range(65, 91)]  # A-Z
+LABELS = [chr(i) for i in range(65, 91)] + ["del", "nothing", "space"] # A-Z
 
 def preprocess_image(image):
     image = image.convert("RGB")
