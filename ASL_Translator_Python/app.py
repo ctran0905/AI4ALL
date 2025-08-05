@@ -1,5 +1,4 @@
 import streamlit as st
-import cv2
 from models import load_model
 from utils import preprocess_image, predict_sign
 from PIL import Image

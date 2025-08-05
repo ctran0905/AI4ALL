@@ -16,7 +16,7 @@ def preprocess_image(image):
     return preprocess(image).unsqueeze(0)
 
 def predict_sign(model, image):
-    input_tensor = preprocess_image(image)
+    input_tensor = preprocess_image(image).to(next(model.parameters()).device)
     with torch.no_grad():
         outputs = model(input_tensor)
         _, preds = torch.max(outputs, 1)
