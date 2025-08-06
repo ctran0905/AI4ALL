@@ -18,7 +18,10 @@ if option == "Webcam":
     
     with col2:
         if st.button("Clear Camera"):
-            st.session_state.pop("camera", None)
+            # Clear all camera-related session state
+            for key in list(st.session_state.keys()):
+                if "camera" in key:
+                    del st.session_state[key]
             st.rerun()
     
     if img_file_buffer is not None:
