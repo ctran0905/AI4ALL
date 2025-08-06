@@ -11,7 +11,16 @@ st.title("American Sign Language Recognition")
 option = st.radio("Choose input method", ["Webcam", "Upload Image"])
 
 if option == "Webcam":
-    img_file_buffer = st.camera_input("Take a picture")
+    col1, col2 = st.columns([3, 1])
+    
+    with col1:
+        img_file_buffer = st.camera_input("Take a picture", key="camera")
+    
+    with col2:
+        if st.button("Clear Camera"):
+            st.session_state.pop("camera", None)
+            st.rerun()
+    
     if img_file_buffer is not None:
         image = Image.open(img_file_buffer)
         st.image(image, caption="Captured image")
