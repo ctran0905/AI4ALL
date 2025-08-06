@@ -3,8 +3,9 @@ import torch
 
 # Match with how the model was trained
 preprocess = transforms.Compose([
-    transforms.Resize((64, 64)),
-    transforms.CenterCrop(64),
+    transforms.Resize((96, 96)),  # Resize larger first
+    transforms.CenterCrop(48),    # Smaller crop to zoom in more on hands
+    transforms.Resize((64, 64)),  # Resize back to model input size
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 ])
