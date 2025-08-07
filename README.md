@@ -28,6 +28,11 @@ American Sign Language serves as the primary language for many deaf individuals,
 ### 🔄 **Bidirectional ASL System**
 - Developed comprehensive ASL recognition system capable of translating ASL alphabet signs to English text and generating visual ASL demonstrations from text input
 
+<div align='center'>
+<img width="600" height="600" alt="Screenshot 2025-08-06 at 8 43 21 PM" src="https://github.com/user-attachments/assets/3076deea-d094-4e85-bafa-e1e5ec15502c" />
+</div>
+
+
 ### ⚡ **Performance Optimization**
 - **Achieved 93% training time optimization** by transitioning from single-threaded to multi-threaded data loading (num_workers=0 to multi-core) and batch size optimization
 - **Reduced training time from 7+ hours to 30 minutes**
@@ -35,6 +40,11 @@ American Sign Language serves as the primary language for many deaf individuals,
 ### 📊 **Dataset & Training**
 - Trained CNN models on **87,000+ images** across **29 ASL alphabet classes** with robust data preprocessing and augmentation techniques
 - Implemented transfer learning using **ResNet-18** for enhanced model performance
+
+<div align='center'>
+<img width="948" height="468" alt="Screenshot 2025-08-06 at 8 43 09 PM" src="https://github.com/user-attachments/assets/d8da6370-cd15-4ac1-8f17-50cce4857549" />
+<img width="657" height="129" alt="Screenshot 2025-08-06 at 8 43 59 PM" src="https://github.com/user-attachments/assets/b50e4b3b-b864-4bc3-bb29-a2f1c3dffc04" />
+</div>
 
 ### 🎮 **User Experience**
 - Designed child-friendly educational tool with gamification elements to make ASL learning engaging and accessible
