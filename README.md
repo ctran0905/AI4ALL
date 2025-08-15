@@ -39,7 +39,7 @@ American Sign Language serves as the primary language for many deaf individuals,
 
 ### 📊 **Dataset & Training**
 - Trained CNN models on **87,000+ images** across **29 ASL alphabet classes** with robust data preprocessing and augmentation techniques
-- Implemented transfer learning using **ResNet-18** for enhanced model performance
+- Implemented transfer learning using **ResNet-50** for enhanced model performance
 
 <div align='center'>
 <img width="948" height="468" alt="Screenshot 2025-08-06 at 8 43 09 PM" src="https://github.com/user-attachments/assets/d8da6370-cd15-4ac1-8f17-50cce4857549" />
@@ -54,7 +54,7 @@ American Sign Language serves as the primary language for many deaf individuals,
 To accomplish this, we utilized **supervised learning with Convolutional Neural Networks (CNNs)** for image classification. The system was trained on **Google Colab** using **PyTorch** and **TensorFlow** frameworks. 
 
 **Key Technical Approaches:**
-- **Transfer Learning**: Implemented pre-trained models including ResNet-18, optimized for hand gesture recognition
+- **Transfer Learning**: Implemented pre-trained models including ResNet-50, optimized for hand gesture recognition
 - **Data Pipeline**: Custom preprocessing pipelines using NumPy for image normalization and resizing
 - **Visualization**: matplotlib for data visualization and model performance analysis
 - **Optimization**: Data loading and batch size tuning resulted in **93% reduction in training time** while maintaining model accuracy across 29 ASL alphabet classes
@@ -74,7 +74,7 @@ To accomplish this, we utilized **supervised learning with Convolutional Neural 
 | 🐍 Python | 🔢 NumPy | ☁️ Google Colab |
 | 🔥 PyTorch | 📊 matplotlib | 📈 Kaggle |
 | 🧠 TensorFlow | 🧱 CNN Architecture | |
-| | 🔄 Transfer Learning (ResNet-18) | |
+| | 🔄 Transfer Learning (ResNet-50) | |
 
 </div>
 
